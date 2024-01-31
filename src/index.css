@@ -5,9 +5,338 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#logo{
+  width: 100px;
+  height: 30px;
+}
+.navbar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+}
+#m{
+  position: relative;
+  top: 3px;
+}
+.dp{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.list{
+  position: absolute;
+  top: 50px;
+  display: none;
+  z-index: 10;
+}
+.dp:hover{
+  text-decoration: underline black;
+}
+.dp:hover .list{
+  display: block;
+}
+.list p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 5s;
+}
+#drop{
+  color: green;
+  margin-left: 10px;
+}
+#micro{
+  width: 30px;
+  height: 30px;
+  margin-right:80px ;
+}
+#glass{
+  margin-left: 20px;
+}
+#glass-btn {
+  background-color: transparent;
+  border: none;
+  width: max-content;
+}
+#glass-btn:hover{
+  color: #312f2f;
+}
+#user-btn{
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  background-color:#474747 ;
+}
+#user-btn:hover{
+  background-color: #312f2f;
+}
+#user{
+  color: white;
+}
+#search-bar{
+  padding: 5px;
+  width: 190px;
+  border: none;
+  box-shadow: 0px 1px  ;
+}
+#search-bar:focus{
+  box-shadow: 0px 0px;
+}
+#control{
+  width: 600px;
+  height: 550px;
+  margin-right: 100px;
+}
+.sec1{
+  display: flex;
+}
+.slogan{
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+}
+.slogan h1{
+  font-size: 80px;
+  color:#474747;
+}
+.slogan p{
+  font-size: larger;
+}
+#learn{
+  background-color: #107c10;
+  padding: 15px;
+  width: 150px;
+  border-color: transparent;
+  color: white;
+  margin-top: 50px;
+}
+#learn:hover{
+  background-color: #0d680d;
+  cursor: pointer;
+}
+#bLands{
+  height: 100px;
+  width: 100px;
+  
+}
+.sec2{
+  position: relative;
+  background-color: #474747;
+  margin: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+  align-items: center;
+  top:20px;
+}
+.sec2-part{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.pic{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.data{
+  text-align: left;
+}
+.data h4{
+  color: white;
+}
+.data p{
+  color: rgb(181, 181, 181);
+  
+}
+#more{
+  color: white;
+  font-size: x-small;
+  width: max-content;
+}
+#more:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sec3{
+  position: relative;
+  top: 40px;
+  text-align: left;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+#dot{
+  font-size: larger;
+  background-color: yellow;
+  width: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+#fifa-data{
+  position: relative;
+  top: 80px;
+  left: 150px;
+}
+#fifa-data h1,#fifa-data h2{
+  color: white;
+  margin-bottom: 20px;
+}
+#fifa-data p{
+  font-size: smaller;
+}
+#fifa-data button{
+  background-color: #107c10;
+  padding: 15px;
+  width: 150px;
+  border-color: transparent;
+  color: white;
+}
+#fifa-data button:hover{
+  background-color: #0d680d;
+  cursor: pointer;
+}
+.shopContainer{
+  display: flex;
+  flex-flow:  wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+  background-color: white;
+  gap: 2px;
+  margin-top: 50px;
+}
+.long2,.long5, .short{
+  width: 755px;
+}
+.long2,.long5{
+  height: 842.188px;
+  background-color: crimson;
+  
+}
+.short{
+  height: 423.862px;
+  background-color:#107c10;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.long2{
+  background-image: url("mortal.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.prodData{
+  text-align: left;
+}
+.short .prodData{
+  position: relative;
+  margin-left: 30px;
+  top: 50px;
+  color: white;
+}
+.long2 .prodData{
+  position: relative;
+  top: 550px;
+  color: white;
+  left: 50px;
+}
+.long5 .prodData{
+  position: relative;
+  top: 550px;
+  color: white;
+  left: 50px;
+}
+.long5{
+  background-image:url("https://assets.xboxservices.com/assets/ea/8f/ea8f85e3-876e-40d0-afc2-cf66ae84748d.jpg?n=239084_Large-tout-0_1083x1222_01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#getNow{
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  
+}
+#getNow:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.short img{
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+.short img:hover{
+  transform:scale(1.1);
+  
+}
+.sec5{
+  text-align:left ;
+  background-image: url("boost.jpg");
+  height: 641.9px;
+  color: white;
+  position: relative;
+  
+}
+.sec5 div{
+  position: relative;
+  left: 950px;
+  top: 150px;
+}
+.footContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.footContainer li{
+  list-style-type: none;
+  cursor: pointer;
+  margin: 50px;
+}
+.footContainer li:hover{
+  text-decoration: underline;
+  
+}
+.footPart{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.footPart ul,.footPart li{
+  padding: 0;
+  margin: 0;
+}
+.foot{
+  height: 324px;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-flow:column ;
+  justify-content: center;
 }
